@@ -3,6 +3,8 @@
     width: 55vw;
     justify-content: center;
     margin: 0 auto;
+    background-color: #589b4294;
+    border-radius: 12%;
 }
 
 .game-input {
@@ -12,7 +14,6 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.129);
     padding: 0 2rem;
 }
 
@@ -31,5 +32,4 @@ button {
     align-items: center;
     gap: 0.5rem;
     padding: 0 2rem;
-    background-color: rgba(0, 0, 0, 0.129);
 }

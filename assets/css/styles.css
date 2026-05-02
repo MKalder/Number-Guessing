@@ -1,20 +1,17 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
+    color: #FFA02E;
 }
 
 body {
     text-align: center;
-    background-color: rgba(245, 245, 220, 0.55);
-}
-
-header {
-    background-color: aquamarine;
-}
-
-.game-text {
-    background-color: azure;
+    background-color: #71716f
 }
 
 #restart-btn {
     margin-top: 2rem
+}
+
+button {
+    border-radius: 12px;
 }
