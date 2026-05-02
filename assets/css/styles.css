@@ -14,3 +14,7 @@ header {
 .game-text {
     background-color: azure;
 }
+
+#restart-btn {
+    margin-top: 2rem
+}
