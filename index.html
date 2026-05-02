@@ -8,25 +8,35 @@
     <link rel="stylesheet" href="./assets/css/flexboxing.css" />
   </head>
   <body>
+    <!-- Header Fixcontent -->
     <header>
       <h1>Guess the number</h1>
       <p>Description</p>
     </header>
+    <!-- Game Block -->
     <section class="game-text">
-      <h2 class="game-title">Game<span class="counter"></span></h2>
+      <h2 class="game-title">Are you ready?<span class="counter"></span></h2>
       <p class="game-subline">
-        Estimation is <span class="gt-or-st"></span> than number
+        <span class="gt-or-st"></span>
       </p>
     </section>
     <section class="game">
       <form class="game-input">
-        <input type="number" required min="1" max="20" placeholder="--" />
-        <button type="btn-play">Play</button>
+        <input
+          id="input-number"
+          type="number"
+          required
+          min="1"
+          max="20"
+          placeholder="Guess"
+        />
+        <button id="play-btn" type="button">Play</button>
       </form>
       <div class="game-score">
-        <h3 class="score">🎯 Attempts: <span class="counter">20</span></h3>
+        <h3 class="score">🎯 Attempts: <span class="counter"></span></h3>
         <h3 class="highscore">🏆 Highscore: <span class="counter">17</span></h3>
       </div>
     </section>
+    <script src="./assets/js/play.js"></script>
   </body>
 </html>

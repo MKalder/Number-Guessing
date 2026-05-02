@@ -19,6 +19,7 @@
 .game-input input,
 button {
     display: inline-block;
+    width: 5rem;
     padding: 0.5rem 1rem;
 }
 
