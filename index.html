@@ -5,39 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess the number</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/flexboxing.css" />
+    <link rel="stylesheet" href="./assets/css/gamebox.css" />
   </head>
   <body>
     <!-- Header Fixcontent -->
-    <header>
-      <h1>Guess the number</h1>
-      <p>Description</p>
-    </header>
-    <!-- Game Block -->
-    <section class="game-text">
-      <h2 class="game-title">Are you ready?<span class="counter"></span></h2>
-      <p class="game-subline">
-        <span class="gt-or-st"></span>
-      </p>
-    </section>
-    <section class="game">
-      <form class="game-input">
-        <input
-          id="input-number"
-          type="number"
-          required
-          min="1"
-          max="20"
-          placeholder="Guess"
-        />
-        <button id="play-btn" type="button">Play</button>
-      </form>
-      <div class="game-score">
-        <h3 class="score">🎯 Attempts: <span class="counter"></span></h3>
-        <h3 class="highscore">🏆 Highscore: <span class="counter"></span></h3>
-      </div>
-    </section>
-    <button id="restart-btn" type="button">Restart</button>
+    <div class="card">
+      <header>
+        <p class="pill">Number Game</p>
+        <h1 class="game-title">Guess the number</h1>
+        <p class="game-subline">
+          I'm thinking of a number between
+          <b>1 and 20</b>
+        </p>
+        <p class="game-sub">How fast can you find it?</p>
+      </header>
+      <!-- Game Block -->
+      <section class="game-text"></section>
+      <section class="game">
+        <form class="game-input">
+          <input
+            id="input-number"
+            type="number"
+            required
+            min="1"
+            max="20"
+            placeholder="Guess"
+          />
+          <button id="play-btn" type="button">Play</button>
+        </form>
+        <div class="game-score">
+          <h3 class="score">🎯 Attempts: <span class="counter"></span></h3>
+          <h3 class="highscore">🏆 Highscore: <span class="counter"></span></h3>
+        </div>
+      </section>
+      <button id="restart-btn" type="button">Restart</button>
+    </div>
     <script src="./assets/js/play.js"></script>
   </body>
 </html>

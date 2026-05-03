@@ -4,7 +4,7 @@
     justify-content: center;
     margin: 0 auto;
     background-color: #589b4294;
-    border-radius: 12%;
+    border-radius: 12px;
 }
 
 .game-input {
@@ -32,4 +32,12 @@ button {
     align-items: center;
     gap: 0.5rem;
     padding: 0 2rem;
+}
+
+#restart-btn {
+    margin-top: 2rem
+}
+
+button {
+    border-radius: 12px;
 }
