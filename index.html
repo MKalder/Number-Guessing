@@ -19,25 +19,33 @@
         <p class="game-info"></p>
       </header>
       <!-- Game Block -->
-      <section class="game-text"></section>
       <section class="game">
+        <div class="game-score">
+          <div class="score">
+            <h3>🎯</h3>
+            <h4>Attempts:</h4>
+            <span class="counter"> </span>
+          </div>
+          <div class="highscore">
+            <h3>🏆</h3>
+            <h4>Highscore:</h4>
+            <span class="counter"> </span>
+          </div>
+        </div>
+        <p class="range-hint">Range: 1 - 20</p>
         <form class="game-input">
           <input
-            id="input-number"
             type="number"
+            id="input-number"
             required
             min="1"
             max="20"
-            placeholder="Guess"
+            placeholder="Enter your guess..."
           />
-          <button id="play-btn" type="button">Play</button>
+          <button id="play-btn" type="button">▶ Play</button>
         </form>
-        <div class="game-score">
-          <h3 class="score">🎯 Attempts: <span class="counter"></span></h3>
-          <h3 class="highscore">🏆 Highscore: <span class="counter"></span></h3>
-        </div>
       </section>
-      <button id="restart-btn" type="button">Restart</button>
+      <button id="restart-btn" type="button">↺ Restart</button>
     </div>
     <script src="./assets/js/play.js"></script>
   </body>
