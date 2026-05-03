@@ -11,7 +11,7 @@ let playedGames = 0;
 let highscore = 0;
 let attempts = 5;
 let random = randomNumber();
-console.log("Random Number: " + random);
+// console.log("Random Number: " + random);
 
 const inputNumber = document.getElementById('input-number');
 
@@ -67,14 +67,14 @@ function setPlayButtonState(isActive) {
 
 function play() {
     const guess = Number(inputNumber.value);
-    console.log(guess);
+    // console.log(guess);
 
     if (checkGuess(guess)) {
         attempts--;
         if (random === guess) {
             gameTitle.textContent = "Congratulations";
             showToast("You have nailed it! 🏆🎯", "success");
-            //setPlayButtonState(false);
+            setPlayButtonState(false);
             if (highscore < attempts) {
                 highscore = attempts;
                 highscoreNumber.textContent = highscore;
@@ -82,7 +82,7 @@ function play() {
         } else if (attempts === 0) {
             gameTitle.textContent = "...GAME OVER";
             showToast("No more attempts left", "error");
-            //setPlayButtonState(false);
+            setPlayButtonState(false);
         } else if (random > guess) {
             showToast("⚠️ Input is smaller than my number.");
         } else {
@@ -94,11 +94,10 @@ function play() {
 }
 
 function newGame() {
-    // playedGames++;
     attempts = 5;
     attemptsCounter.textContent = attempts;
     random = randomNumber();
     gameTitle.textContent = "Another Round";
     showToast("New Round", "success");
-    //setPlayButtonState(true);
+    setPlayButtonState(true);
 }
