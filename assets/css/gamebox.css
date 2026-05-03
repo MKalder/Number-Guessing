@@ -162,3 +162,15 @@ input:focus {
 button {
     border-radius: 12px;
 }
+
+button.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: scale(0.98);
+}
+
+button.active {
+    opacity: 1;
+    cursor: pointer;
+
+}
