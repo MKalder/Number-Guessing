@@ -32,7 +32,7 @@ Built as a frontend learning project focused on:
 
 ## Demo
 
-...tbd
+[![Live Demo](https://img.shields.io/badge/Live-Demo-00c853?style=for-the-badge)](https://numbergame.mariuskalder.de/)
 
 ## What I have learned through this project
 
@@ -174,7 +174,7 @@ Possible next steps:
 
 ## How to Run
 
-Simply open index.html in your browser or use the demo link
+Simply open index.html in your browser or use the demo [link](https://numbergame.mariuskalder.de/)
 
 ## Why this project matters
 
