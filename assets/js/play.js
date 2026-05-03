@@ -3,7 +3,7 @@ const buttonPlay = document.getElementById("play-btn");
 const buttonRestart = document.getElementById("restart-btn");
 const gameTitle = document.querySelector(".game-title");
 
-const infoGameSub = document.querySelector(".game-sub");
+const gameInfo = document.querySelector(".game-info");
 
 // game specific numbers
 let playedGames = 0;
@@ -50,8 +50,8 @@ function play() {
     if (checkGuess(guess)) {
         attempts--;
         if (random === guess) {
-            gameTitle.textContent = "Congratulations 🥳";
-            infoGameSub.textContent = "You have nailed it! 🏆🎯";
+            gameTitle.textContent = "Congratulations";
+            gameInfo.textContent = "You have nailed it! 🏆🎯";
             buttonPlay.disabled = true;
             if (highscore < attempts) {
                 highscore = attempts;
@@ -59,12 +59,12 @@ function play() {
             }
         } else if (attempts === 0) {
             gameTitle.textContent = "...GAME OVER 😔";
-            infoGameSub.textContent = "No more attempts left";
+            gameInfo.textContent = "No more attempts left";
             buttonPlay.disabled = true;
         } else if (random > guess) {
-            infoGameSub.textContent = "Input is smaller than my number."
+            gameInfo.textContent = "Input is smaller than my number."
         } else {
-            infoGameSub.textContent = "Input is greater than my number."
+            gameInfo.textContent = "Input is greater than my number."
         }
         attemptsCounter.textContent = attempts;
     }
@@ -78,5 +78,5 @@ function newGame() {
     attemptsCounter.textContent = attempts;
     random = randomNumber();
     gameTitle.textContent = "Another Round 😀";
-    infoGameSub.textContent = "How fast can you find it?";
+    gameInfo.textContent = "How fast can you find it?";
 }

@@ -1,7 +1,19 @@
 :root {
+
+    /* GLOBAL SETTINGS */
     font-family: Arial, Helvetica, sans-serif;
-    color: #FFA02E;
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+
+    /* COLORS PILL*/
+    --background-pill: rgba(251, 188, 5, 0.15);
+    --border-pill: 1px solid rgba(251, 188, 5, 0.4);
+    --color-pill: #fbbc05;
+
+    /* COLORS GAME HEADLINE */
+
+    /* COLORS SUBLINE */
+
+
 }
 
 body {
